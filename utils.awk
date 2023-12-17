@@ -124,4 +124,10 @@ function tr(str, from, to,    nf, f, nt, t, i, ft, c, tmp) {
 	return tmp
 }
 
+function keyvalswap(a, b,    k) {
+	for(k in a) {
+		b[a[k]]=k
+	}
+}
+
 @namespace "awk"
