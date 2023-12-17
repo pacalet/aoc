@@ -103,6 +103,17 @@ function copy_array(a, b,    key) {
 	}
 }
 
+# Print array of characters. a[i][j] is the character of line i, column j.
+# Indexes start at 0. The top-left character is a[0][0].
+function print_screen(a,    i ,j) {
+	for(i=0; i<length(a); i++) {
+		for(j=0; j<length(a[i]); j++) {
+			printf("%s", a[i][j])
+		}
+		printf("\n");
+	}
+}
+
 # Return string `str` where all characters in string `from` have been replaced
 # with corresponding character in string `to`. If strings `from` and `to` have
 # different lengths the longest is truncated.

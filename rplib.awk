@@ -4,17 +4,6 @@
 @include "list"
 @include "utils"
 
-# Print array of characters. a[i][j] is the character of line i, column j.
-# Indexes start at 0. The top-left character is a[0][0].
-function print_screen(a,    i ,j) {
-	for(i=0; i<length(a); i++) {
-		for(j=0; j<length(a[i]); j++) {
-			printf("%s", a[i][j])
-		}
-		printf("\n");
-	}
-}
-
 # Find first occurence in string `s` of any of the string values of indexed
 # array `str`. `str` must be indexed from 1 to N where N is the number of
 # strings to search for. If several strings are found, `how` selects which is
