@@ -103,15 +103,17 @@ function copy_array(a, b,    key) {
 	}
 }
 
-# Print array of characters. a[i][j] is the character of line i, column j.
-# Indexes start at 0. The top-left character is a[0][0].
-function print_screen(a,    i ,j) {
-	for(i=0; i<length(a); i++) {
-		for(j=0; j<length(a[i]); j++) {
+# Print array of characters. a[i][j] is the character at line i, column j.
+function print_screen(a,    i ,j, procinfo_sorted_in) {
+	procinfo_sorted_in=PROCINFO["sorted_in"]
+	PROCINFO["sorted_in"]="@ind_num_asc"
+	for(i in a) {
+		for(j in a[i]) {
 			printf("%s", a[i][j])
 		}
 		printf("\n");
 	}
+	PROCINFO["sorted_in"]=procinfo_sorted_in
 }
 
 # Return string `str` where all characters in string `from` have been replaced
