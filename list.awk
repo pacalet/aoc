@@ -68,6 +68,15 @@ function size(list) {
 	return list[0]
 }
 
+# Print list
+function show(list,    p, i) {
+	printf("%ssize=%d ", p, size(list))
+	for(i=1; i<=size(list); i++) {
+		printf("[%d]=%s ", i, list[i])
+	}
+	printf("\n")
+}
+
 @namespace "awk"
 
 # vim: set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0:
