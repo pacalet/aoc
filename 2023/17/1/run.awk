@@ -1,4 +1,4 @@
-# Dijsktra path finder algorithm
+# Dijkstra path finder algorithm
 #
 # The problem is represented as a graph with "[x,y,d,n]" vertexes where "[x,y]"
 # is a grid position (1<="x"<="width" and 1<="y"<="height"), "d" is the
